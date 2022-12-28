@@ -105,7 +105,7 @@ function TaskList() {
 
           <div className="row">
             <span className="p-2 fw-bold text-center"> Child tasks:-
-              {tasks.map((task,index) => {if (task.parent_task ==!null ) { 
+              {tasks.map((task,index) => {if (task.parent_task != null ) { 
                   return <>
                       <div className="d-flex justify-content-between  border border-danger m-5 mt-2 p-4">
                         <span className="p-2 fw-bold " key={`${task.id}-${index}`}>
